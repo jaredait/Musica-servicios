@@ -12,31 +12,72 @@ namespace Musica.Models
         public GeneroModelo()
         {
             _contexto = new MusicaEntities();
+            _contexto.Configuration.ProxyCreationEnabled = false;
         }
         
         public bool addGenero(GENERO newGenero)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _contexto.GENERO.Add(newGenero);
+                _contexto.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public GENERO getGenero(string id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _contexto.GENERO.Where(g => g.GEN_ID == id).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
 
         public IEnumerable<GENERO> getGeneros()
         {
-            throw new NotImplementedException();
+            return _contexto.GENERO.ToList();
         }
 
         public bool removeGenero(string id)
         {
-            throw new NotImplementedException();
+            GENERO generoTemp = getGenero(id);
+            if (generoTemp != null)
+            {
+                _contexto.GENERO.Remove(generoTemp);
+                _contexto.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
         public GENERO updateGenero(string id, GENERO updatedGenero)
         {
-            throw new NotImplementedException();
+            try
+            {
+                GENERO generoTemp = getGenero(id);
+
+                if (generoTemp != null)
+                {
+                    generoTemp.GEN_NOMBRE = updatedGenero.GEN_NOMBRE;
+
+                    _contexto.SaveChanges();
+                    return generoTemp;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
