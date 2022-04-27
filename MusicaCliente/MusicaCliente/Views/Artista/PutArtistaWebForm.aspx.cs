@@ -20,13 +20,11 @@ namespace MusicaCliente.Views.Artista
         {
             operaciones = new Artista_Datos();
 
-            DateTime fecha = Convert.ToDateTime(txtFechaArt.Text);
-
             ARTISTA nuevoAlbum = new ARTISTA();
             nuevoAlbum.ART_ID = txtIdArtista.Text;
             nuevoAlbum.ART_NOMBRE = txtNombreArt.Text;
             nuevoAlbum.ART_EMAIL = txtEmailArt.Text;
-            nuevoAlbum.ART_FECHA_CREACION = fecha.Date;
+            nuevoAlbum.ART_FECHA_CREACION = calPutArtista.SelectedDate;
             nuevoAlbum.ART_CANT_INTEGRANTES = int.Parse(txtIntegrantesArt.Text);
 
             operaciones.actualizarArtista(nuevoAlbum);
@@ -47,7 +45,6 @@ namespace MusicaCliente.Views.Artista
             txtIdArtista.Text = "";
             txtNombreArt.Text = "";
             txtEmailArt.Text = "";
-            txtFechaArt.Text = "";
             txtIntegrantesArt.Text = "";
         }
     }
