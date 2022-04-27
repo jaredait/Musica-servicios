@@ -53,7 +53,7 @@ namespace MusicaCliente.Utilidades.Cancion
 
         public void actualizarCancion(CANCION cancionActualizada)
         {
-            string uri = this.uri + cancionActualizada.ALB_ID;
+            string uri = this.uri + $"/{cancionActualizada.CAN_ID}";
             verbo = "PUT";
 
             string objetoJson = JsonConvert.SerializeObject(cancionActualizada);

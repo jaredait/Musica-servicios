@@ -16,20 +16,18 @@ namespace MusicaCliente.Views.Cancion
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
-            limpiarCampos();
+            //limpiarCampos();
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             CANCION cancionActualizada = new CANCION();
 
-            string temp = txtIdA.Text;
-
-            cancionActualizada.CAN_ID = txtId.Text;
-            cancionActualizada.ALB_ID = txtAlbumId.Text;
-            cancionActualizada.GEN_ID = txtGeneroId.Text;
-            cancionActualizada.CAN_NOMBRE = txtNombre.Text;
-            cancionActualizada.CAN_DURACION = Convert.ToDecimal(txtDuracion.Text);
+            cancionActualizada.CAN_ID = txtIdActualizar.Text;
+            cancionActualizada.ALB_ID = txtAlbumIdActualizar.Text;
+            cancionActualizada.GEN_ID = txtGeneroIdActualizar.Text;
+            cancionActualizada.CAN_NOMBRE = txtNombreActualizar.Text;
+            cancionActualizada.CAN_DURACION = Convert.ToDecimal(txtDuracionActualizar.Text);
 
             operaciones.actualizarCancion(cancionActualizada);
 
@@ -39,12 +37,12 @@ namespace MusicaCliente.Views.Cancion
 
         private void limpiarCampos()
         {
-            txtId.Text = "";
-            txtAlbumId.Text = "";
-            txtGeneroId.Text = "";
-            txtNombre.Text = "";
-            txtDuracion.Text = "";
-            txtId.Focus();
+            txtIdActualizar.Text = "";
+            txtAlbumIdActualizar.Text = "";
+            txtGeneroIdActualizar.Text = "";
+            txtNombreActualizar.Text = "";
+            txtDuracionActualizar.Text = "";
+            txtIdActualizar.Focus();
         }
 
         private void cargarGridView()

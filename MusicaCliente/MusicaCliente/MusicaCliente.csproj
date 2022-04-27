@@ -117,7 +117,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\Album\Album_Datos.cs" />
     <Compile Include="Models\ARTISTA.cs" />
+    <Compile Include="Utilidades\Artista\Artista_Datos.cs" />
     <Compile Include="Utilidades\Cancion\Cancion_Datos.cs" />
+    <Compile Include="Utilidades\Genero\Genero_Datos.cs" />
     <Compile Include="Views\Album\DeleteAlbum.aspx.cs">
       <DependentUpon>DeleteAlbum.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -264,8 +266,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Utilidades\Artista\" />
-    <Folder Include="Utilidades\Genero\" />
     <Folder Include="wwwroot\html\" />
     <Folder Include="wwwroot\img\" />
     <Folder Include="wwwroot\js\" />

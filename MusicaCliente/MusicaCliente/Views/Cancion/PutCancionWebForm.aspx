@@ -7,23 +7,20 @@
     <br />
     <asp:GridView ID="GVPut" runat="server">
     </asp:GridView>
-    <asp:TextBox ID="txtIdA" runat="server"></asp:TextBox>
-    <br />
-
     ID:
-    <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtIdActualizar" runat="server"></asp:TextBox>
     <br />
     Álbum ID:
-    <asp:TextBox ID="txtAlbumId" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtAlbumIdActualizar" runat="server"></asp:TextBox>
     <br />
     Género ID:
-    <asp:TextBox ID="txtGeneroId" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtGeneroIdActualizar" runat="server"></asp:TextBox>
     <br />
     Nombre:
-    <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtNombreActualizar" runat="server"></asp:TextBox>
     <br />
     Duración:
-    <asp:TextBox ID="txtDuracion" runat="server"></asp:TextBox>
+    <asp:TextBox ID="txtDuracionActualizar" runat="server"></asp:TextBox>
     <br />
     <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
 </asp:Content>

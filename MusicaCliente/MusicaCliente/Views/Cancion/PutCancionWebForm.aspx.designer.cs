@@ -24,58 +24,49 @@ namespace MusicaCliente.Views.Cancion
         protected global::System.Web.UI.WebControls.GridView GVPut;
 
         /// <summary>
-        /// txtIdA control.
+        /// txtIdActualizar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIdA;
+        protected global::System.Web.UI.WebControls.TextBox txtIdActualizar;
 
         /// <summary>
-        /// txtId control.
+        /// txtAlbumIdActualizar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId;
+        protected global::System.Web.UI.WebControls.TextBox txtAlbumIdActualizar;
 
         /// <summary>
-        /// txtAlbumId control.
+        /// txtGeneroIdActualizar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAlbumId;
+        protected global::System.Web.UI.WebControls.TextBox txtGeneroIdActualizar;
 
         /// <summary>
-        /// txtGeneroId control.
+        /// txtNombreActualizar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGeneroId;
+        protected global::System.Web.UI.WebControls.TextBox txtNombreActualizar;
 
         /// <summary>
-        /// txtNombre control.
+        /// txtDuracionActualizar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombre;
-
-        /// <summary>
-        /// txtDuracion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDuracion;
+        protected global::System.Web.UI.WebControls.TextBox txtDuracionActualizar;
 
         /// <summary>
         /// btnGuardar control.
