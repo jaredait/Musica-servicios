@@ -3,19 +3,20 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
+    <div class="container">
         <h1>Actualizar Álbum</h1>
         <br />
-        <asp:GridView ID="GridView1" runat="server">
+        <asp:GridView ID="GridView1" runat="server" class="table w-75">
         </asp:GridView>
-        ID:<asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+        ID:<asp:TextBox ID="txtId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Artista ID:<asp:TextBox ID="txtArtistaId" runat="server"></asp:TextBox>
+        Artista ID:<asp:TextBox ID="txtArtistaId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Nombre:<asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+        Nombre:<asp:TextBox ID="txtNombre" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Fecha:<asp:TextBox ID="txtFecha" runat="server"></asp:TextBox>
+        Fecha:<asp:Calendar ID="calFecha" runat="server"></asp:Calendar>
         <br />
-        <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" OnClick="btnActualizar_Click" />
+        <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" OnClick="btnActualizar_Click" class="btn btn-primary"/>
+        <br />
     </div>
 </asp:Content>

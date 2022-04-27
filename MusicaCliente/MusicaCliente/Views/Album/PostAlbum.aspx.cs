@@ -27,13 +27,11 @@ namespace MusicaCliente.Views.Album
         {
             operaciones = new Album_Datos();
 
-            DateTime fecha = Convert.ToDateTime(txtFecha.Text);
-
             ALBUM nuevoAlbum = new ALBUM();
             nuevoAlbum.ALB_ID = txtId.Text;
             nuevoAlbum.ART_ID = txtArtistaId.Text;
             nuevoAlbum.ALB_NOMBRE = txtNombre.Text;
-            nuevoAlbum.ALB_FECHA_LANZAMIENTO = fecha.Date;
+            nuevoAlbum.ALB_FECHA_LANZAMIENTO = calFechaPost.SelectedDate;
 
             operaciones.crearAlbum(nuevoAlbum);
             limpiarCampos();
@@ -44,7 +42,6 @@ namespace MusicaCliente.Views.Album
             txtId.Text = "";
             txtArtistaId.Text = "";
             txtNombre.Text = "";
-            txtFecha.Text = "";
         }
     }
 }

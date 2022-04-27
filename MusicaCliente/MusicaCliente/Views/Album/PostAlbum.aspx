@@ -3,17 +3,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
+    <div class="container">
         <h1>Agregar Álbum</h1>
         <br />
-        ID:<asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+        ID:<asp:TextBox ID="txtId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Artista ID:<asp:TextBox ID="txtArtistaId" runat="server"></asp:TextBox>
+        Artista ID:<asp:TextBox ID="txtArtistaId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Nombre:<asp:TextBox ID="txtNombre" runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>
+        Nombre:<asp:TextBox ID="txtNombre" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Fecha:<asp:TextBox ID="txtFecha" runat="server"></asp:TextBox>
+        Fecha:<br />
+        <asp:Calendar ID="calFechaPost" runat="server"></asp:Calendar>
         <br />
-        <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" />
+        <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" class="btn btn-primary"/>
     </div>
 </asp:Content>

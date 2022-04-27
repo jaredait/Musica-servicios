@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>Buscar Canción</h1>
     ID:<asp:TextBox ID="txtBuscarCancion" runat="server"></asp:TextBox>
-    <asp:Button ID="btnBuscarCancion" runat="server" Text="Button" OnClick="btnBuscarCancion_Click" />
+    <asp:Button ID="btnBuscarCancion" runat="server" Text="Buscar" OnClick="btnBuscarCancion_Click" />
     <asp:GridView ID="GVBuscarCancion" runat="server">
     </asp:GridView>
     <br />
