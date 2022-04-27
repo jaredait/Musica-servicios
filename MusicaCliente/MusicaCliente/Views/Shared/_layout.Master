@@ -16,6 +16,11 @@
                     <li><a href="../Cancion/GetCancionWebForm.aspx">Ver canciones</a></li>
                     <li><a href="../Cancion/PostCancionWebForm.aspx">Agregar canción</a></li>
                     <li><a href="../Cancion/PutCancionWebForm.aspx">Actualizar canción</a></li>
+                    <li><a href="../Cancion/PutCancionWebForm.aspx">Eliminar canción</a></li>
+                    <li><a href="../Album/DeleteAlbum.aspx">Eliminar album</a></li>
+                    <li><a href="../Album/GetAlbum.aspx">Buscar album</a></li>
+                    <li><a href="../Album/PostAlbum.aspx">Crear album</a></li>
+                    <li><a href="../Album/PutAlbum.aspx">Actualizar album</a></li>
                 </ul>
             </div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
