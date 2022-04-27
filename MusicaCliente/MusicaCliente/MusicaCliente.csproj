@@ -100,6 +100,7 @@
     <Content Include="Views\Artista\GetArtistaWebForm.aspx" />
     <Content Include="Views\Artista\PostArtistaWebForm.aspx" />
     <Content Include="Views\Artista\PutArtistaWebForm.aspx" />
+    <Content Include="Views\Cancion\DeleteCancionWebForm.aspx" />
     <Content Include="Views\Cancion\GetCancionWebForm.aspx" />
     <Content Include="Views\Cancion\PostCancionWebForm.aspx" />
     <Content Include="Views\Cancion\PutCancionWebForm.aspx" />
@@ -175,6 +176,13 @@
     </Compile>
     <Compile Include="Views\Artista\PutArtistaWebForm.aspx.designer.cs">
       <DependentUpon>PutArtistaWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cancion\DeleteCancionWebForm.aspx.cs">
+      <DependentUpon>DeleteCancionWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Cancion\DeleteCancionWebForm.aspx.designer.cs">
+      <DependentUpon>DeleteCancionWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Cancion\GetCancionWebForm.aspx.cs">
       <DependentUpon>GetCancionWebForm.aspx</DependentUpon>

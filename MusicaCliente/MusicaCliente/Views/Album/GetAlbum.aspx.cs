@@ -20,9 +20,9 @@ namespace MusicaCliente.Views.Album
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TextBox1.Text))
+            if (!String.IsNullOrEmpty(txtId.Text))
             {
-                cargarGridView(TextBox1.Text);
+                cargarGridView(txtId.Text);
             }
             else
             {
@@ -38,8 +38,8 @@ namespace MusicaCliente.Views.Album
         private void cargarGridView()
         {
             operaciones = new Album_Datos();
-            GridView1.DataSource = operaciones.cargarAlbumes();
-            GridView1.DataBind();
+            GVGet.DataSource = operaciones.cargarAlbumes();
+            GVGet.DataBind();
         }
 
         private void cargarGridView(string id)
@@ -47,8 +47,8 @@ namespace MusicaCliente.Views.Album
             operaciones = new Album_Datos();
             List<ALBUM> datos = new List<ALBUM>();
             datos.Add(operaciones.cargarAlbumPorId(id));
-            GridView1.DataSource = datos;
-            GridView1.DataBind();
+            GVGet.DataSource = datos;
+            GVGet.DataBind();
         }
     }
 }

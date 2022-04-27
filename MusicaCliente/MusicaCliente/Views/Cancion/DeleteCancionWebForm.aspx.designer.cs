@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MusicaCliente.Views.Album
+namespace MusicaCliente.Views.Cancion
 {
 
 
-    public partial class GetAlbum
+    public partial class DeleteCancionWebForm
     {
 
         /// <summary>
@@ -24,21 +24,21 @@ namespace MusicaCliente.Views.Album
         protected global::System.Web.UI.WebControls.GridView GVGet;
 
         /// <summary>
-        /// txtId control.
+        /// txtIdEliminar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId;
+        protected global::System.Web.UI.WebControls.TextBox txtIdEliminar;
 
         /// <summary>
-        /// btnBuscar control.
+        /// btnEliminar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBuscar;
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
     }
 }
