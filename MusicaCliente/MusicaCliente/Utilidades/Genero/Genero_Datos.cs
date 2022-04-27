@@ -18,7 +18,7 @@ namespace MusicaCliente.Utilidades.Genero
 
         public Genero_Datos()
         {
-            uri = "https://localhost:9070/api/genero";
+            uri = "http://localhost:9070/api/genero";
             webClient = new WebClient();
         }
 

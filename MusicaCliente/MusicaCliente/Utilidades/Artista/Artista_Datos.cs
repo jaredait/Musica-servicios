@@ -18,7 +18,7 @@ namespace MusicaCliente.Utilidades.Artista
 
         public Artista_Datos()
         {
-            uri = "https://localhost:9070/api/artista";
+            uri = "http://localhost:9070/api/artista";
             webClient = new WebClient();
         }
 

@@ -11,43 +11,34 @@ namespace MusicaCliente.Views.Cancion
 {
 
 
-    public partial class GetCancionWebForm
+    public partial class GetCancion1WebForm
     {
 
         /// <summary>
-        /// BtnLimpiar control.
+        /// txtBuscarCancion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLimpiar;
+        protected global::System.Web.UI.WebControls.TextBox txtBuscarCancion;
 
         /// <summary>
-        /// BtnBuscar control.
+        /// btnBuscarCancion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnBuscar;
+        protected global::System.Web.UI.WebControls.Button btnBuscarCancion;
 
         /// <summary>
-        /// GVGet control.
+        /// GVBuscarCancion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GVGet;
-
-        /// <summary>
-        /// TextBox1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.GridView GVBuscarCancion;
     }
 }

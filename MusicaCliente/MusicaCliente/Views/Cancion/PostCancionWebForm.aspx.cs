@@ -15,32 +15,35 @@ namespace MusicaCliente.Views.Cancion
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            limpiarCampos();
-        }
-
-        protected void btnCrear_Click(object sender, EventArgs e)
-        {
-            operaciones = new Cancion_Datos();
-
-            CANCION nuevaCancion = new CANCION();
-            nuevaCancion.CAN_ID = txtId.Text;
-            nuevaCancion.ALB_ID = txtAlbumId.Text;
-            nuevaCancion.GEN_ID = txtGeneroId.Text;
-            nuevaCancion.CAN_NOMBRE = txtNombre.Text;
-            nuevaCancion.CAN_DURACION = Convert.ToDecimal(txtDuracion.Text);
-
-            operaciones.crearCancion(nuevaCancion);
-            limpiarCampos();
+            //limpiarCampos();
         }
 
         private void limpiarCampos()
         {
-            txtId.Text = "";
-            txtAlbumId.Text = "";
-            txtGeneroId.Text = "";
-            txtNombre.Text = "";
-            txtDuracion.Text = "";
-            txtId.Focus();
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
+            TextBox1.Focus();
+        }
+
+        protected void btnCrear_Click(object sender, EventArgs e)
+        {
+            CANCION cancionTemp = new CANCION();
+            operaciones = new Cancion_Datos();
+
+            // los nombres de los siguientes textbox no se cambiaron porque el código da problemas cada vez que se los cambia
+            // esto sucedió varias veces, incluso con nuevos textbox.
+
+            cancionTemp.CAN_ID = TextBox1.Text;
+            cancionTemp.ALB_ID = TextBox2.Text;
+            cancionTemp.GEN_ID = TextBox3.Text;
+            cancionTemp.CAN_NOMBRE = TextBox4.Text;
+            cancionTemp.CAN_DURACION = Convert.ToDecimal(TextBox5.Text);
+
+            operaciones.crearCancion(cancionTemp);
+            limpiarCampos();
         }
     }
 }

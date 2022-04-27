@@ -26,10 +26,21 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuCanciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Canciones
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="../Cancion/GetCancionWebForm.aspx">Buscar</a>
+                        <a class="dropdown-item" href="../Cancion/GetCancion1WebForm.aspx">Buscar</a>
                         <a class="dropdown-item" href="../Cancion/PostCancionWebForm.aspx">Agregar</a>
                         <a class="dropdown-item" href="../Cancion/PutCancionWebForm.aspx">Actualizar</a>
                         <a class="dropdown-item" href="../Cancion/DeleteCancionWebForm.aspx">Eliminar</a>
+
+                        <a href="../Genero/DeleteGeneroWebForm.aspx">../Genero/DeleteGeneroWebForm.aspx</a>
+                        <a href="../Genero/GetGeneroWebForm.aspx">../Genero/GetGeneroWebForm.aspx</a>
+                        <a href="../Genero/PostGeneroWebForm.aspx">../Genero/PostGeneroWebForm.aspx</a>
+                        <a href="../Genero/PutGeneroWebForm.aspx">../Genero/PutGeneroWebForm.aspx</a>
+
+                        <a href="../Artista/DeleteArtistaWebForm.aspx">../Artista/DeleteArtistaWebForm.aspx</a>
+                        <a href="../Artista/GetArtistaWebForm.aspx">../Artista/GetArtistaWebForm.aspx</a>
+                        <a href="../Artista/PostArtistaWebForm.aspx">../Artista/PostArtistaWebForm.aspx</a>
+                        <a href="../Artista/PutArtistaWebForm.aspx">../Artista/PutArtistaWebForm.aspx</a>
+
                     </div>
                 </li>
 

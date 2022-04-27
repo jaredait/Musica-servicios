@@ -7,19 +7,19 @@
     <h1>Agregar Canción</h1>
     <br />
     ID:
-    <asp:TextBox ID="txtId" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
     <br />
     Álbum ID:
-    <asp:TextBox ID="txtAlbumId" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
     <br />
     Género ID:
-    <asp:TextBox ID="txtGeneroId" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
     <br />
     Nombre:
-    <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
     <br />
     Duración:
-    <asp:TextBox ID="txtDuracion" runat="server"></asp:TextBox>
+    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
     <br />
     <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" />
 </asp:Content>
