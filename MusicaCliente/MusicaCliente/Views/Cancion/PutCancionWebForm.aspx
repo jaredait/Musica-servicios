@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <h1 class="titulos">Actualizar Album</h1>
+    <h1>Actualizar Canción</h1>
     <br />
     <asp:GridView ID="GVPut" runat="server">
     </asp:GridView>

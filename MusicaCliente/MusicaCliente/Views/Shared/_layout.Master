@@ -7,25 +7,48 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <div id="navbar">
-                <ul>
-                    <li><a href="../Cancion/GetCancionWebForm.aspx">Ver canciones</a></li>
-                    <li><a href="../Cancion/PostCancionWebForm.aspx">Agregar canción</a></li>
-                    <li><a href="../Cancion/PutCancionWebForm.aspx">Actualizar canción</a></li>
-                    <li><a href="../Cancion/PutCancionWebForm.aspx">Eliminar canción</a></li>
-                    <li><a href="../Album/DeleteAlbum.aspx">Eliminar album</a></li>
-                    <li><a href="../Album/GetAlbum.aspx">Buscar album</a></li>
-                    <li><a href="../Album/PostAlbum.aspx">Crear album</a></li>
-                    <li><a href="../Album/PutAlbum.aspx">Actualizar album</a></li>
-                </ul>
-            </div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuCanciones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Canciones
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../Cancion/GetCancionWebForm.aspx">Buscar</a>
+                        <a class="dropdown-item" href="../Cancion/PostCancionWebForm.aspx">Agregar</a>
+                        <a class="dropdown-item" href="../Cancion/PutCancionWebForm.aspx">Actualizar</a>
+                        <a class="dropdown-item" href="../Cancion/DeleteCancionWebForm.aspx">Eliminar</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuAlbumes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Álbumes
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../Album/GetAlbum.aspx">Buscar</a>
+                        <a class="dropdown-item" href="../Album/PostAlbum.aspx">Agregar</a>
+                        <a class="dropdown-item" href="../Album/PutAlbum.aspx">Actualizar</a>
+                        <a class="dropdown-item" href="../Album/DeleteAlbum.aspx">Eliminar</a>
+                    </div>
+                </li>
+            </ul>
         </div>
+    </nav>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
     </form>
 </body>
 </html>

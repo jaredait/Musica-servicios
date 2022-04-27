@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <h1>Crear Album</h1>
+    <h1>Agregar Canción</h1>
     <br />
     ID:
     <asp:TextBox ID="txtId" runat="server"></asp:TextBox>

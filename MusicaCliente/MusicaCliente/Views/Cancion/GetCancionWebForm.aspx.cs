@@ -21,9 +21,9 @@ namespace MusicaCliente.Views.Cancion
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(TxtGetBuscar.Text))
+            if (!String.IsNullOrEmpty(TextBox1.Text))
             {
-                cargarGridView(TxtGetBuscar.Text);
+                cargarGridView(TextBox1.Text);
             }
             else
             {
@@ -54,8 +54,8 @@ namespace MusicaCliente.Views.Cancion
 
         public void limpiarBusqueda()
         {
-            TxtGetBuscar.Text = "";
-            TxtGetBuscar.Focus();
+            TextBox1.Text = "";
+            TextBox1.Focus();
         }
     }
 }

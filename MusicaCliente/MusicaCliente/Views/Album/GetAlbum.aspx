@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <p class="titulos">Buscar Album</p>
+        <h1>Buscar Álbum</h1>
         <asp:GridView ID="GVGet" runat="server">
         </asp:GridView>
         <asp:TextBox ID="txtId" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>

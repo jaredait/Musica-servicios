@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-        <p class="titulos">Actualizar Album</p>
+        <h1>Actualizar Álbum</h1>
         <br />
         <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>
