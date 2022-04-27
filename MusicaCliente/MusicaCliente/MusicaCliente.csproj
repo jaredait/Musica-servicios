@@ -96,9 +96,17 @@
     <Content Include="Views\Album\GetAlbum.aspx" />
     <Content Include="Views\Album\PostAlbum.aspx" />
     <Content Include="Views\Album\PutAlbum.aspx" />
+    <Content Include="Views\Artista\DeleteArtistaWebForm.aspx" />
+    <Content Include="Views\Artista\GetArtistaWebForm.aspx" />
+    <Content Include="Views\Artista\PostArtistaWebForm.aspx" />
+    <Content Include="Views\Artista\PutArtistaWebForm.aspx" />
     <Content Include="Views\Cancion\GetCancionWebForm.aspx" />
     <Content Include="Views\Cancion\PostCancionWebForm.aspx" />
     <Content Include="Views\Cancion\PutCancionWebForm.aspx" />
+    <Content Include="Views\Genero\DeleteGeneroWebForm.aspx" />
+    <Content Include="Views\Genero\GetGeneroWebForm.aspx" />
+    <Content Include="Views\Genero\PostGeneroWebForm.aspx" />
+    <Content Include="Views\Genero\PutGeneroWebForm.aspx" />
     <Content Include="Web.config" />
     <Content Include="wwwroot\css\styles.css" />
   </ItemGroup>
@@ -138,6 +146,34 @@
     <Compile Include="Views\Album\PutAlbum.aspx.designer.cs">
       <DependentUpon>PutAlbum.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Artista\DeleteArtistaWebForm.aspx.cs">
+      <DependentUpon>DeleteArtistaWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Artista\DeleteArtistaWebForm.aspx.designer.cs">
+      <DependentUpon>DeleteArtistaWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Artista\GetArtistaWebForm.aspx.cs">
+      <DependentUpon>GetArtistaWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Artista\GetArtistaWebForm.aspx.designer.cs">
+      <DependentUpon>GetArtistaWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Artista\PostArtistaWebForm.aspx.cs">
+      <DependentUpon>PostArtistaWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Artista\PostArtistaWebForm.aspx.designer.cs">
+      <DependentUpon>PostArtistaWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Artista\PutArtistaWebForm.aspx.cs">
+      <DependentUpon>PutArtistaWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Artista\PutArtistaWebForm.aspx.designer.cs">
+      <DependentUpon>PutArtistaWebForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Cancion\GetCancionWebForm.aspx.cs">
       <DependentUpon>GetCancionWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -158,6 +194,34 @@
     </Compile>
     <Compile Include="Views\Cancion\PutCancionWebForm.aspx.designer.cs">
       <DependentUpon>PutCancionWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Genero\DeleteGeneroWebForm.aspx.cs">
+      <DependentUpon>DeleteGeneroWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Genero\DeleteGeneroWebForm.aspx.designer.cs">
+      <DependentUpon>DeleteGeneroWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Genero\GetGeneroWebForm.aspx.cs">
+      <DependentUpon>GetGeneroWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Genero\GetGeneroWebForm.aspx.designer.cs">
+      <DependentUpon>GetGeneroWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Genero\PostGeneroWebForm.aspx.cs">
+      <DependentUpon>PostGeneroWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Genero\PostGeneroWebForm.aspx.designer.cs">
+      <DependentUpon>PostGeneroWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Genero\PutGeneroWebForm.aspx.cs">
+      <DependentUpon>PutGeneroWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Genero\PutGeneroWebForm.aspx.designer.cs">
+      <DependentUpon>PutGeneroWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Shared\_layout.Master.cs">
       <DependentUpon>_layout.Master</DependentUpon>
@@ -202,8 +266,6 @@
   <ItemGroup>
     <Folder Include="Utilidades\Artista\" />
     <Folder Include="Utilidades\Genero\" />
-    <Folder Include="Views\Artista\" />
-    <Folder Include="Views\Genero\" />
     <Folder Include="wwwroot\html\" />
     <Folder Include="wwwroot\img\" />
     <Folder Include="wwwroot\js\" />

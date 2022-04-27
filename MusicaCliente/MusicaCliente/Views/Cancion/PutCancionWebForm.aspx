@@ -7,6 +7,7 @@
     <br />
     <asp:GridView ID="GVPut" runat="server">
     </asp:GridView>
+    <asp:TextBox ID="txtIdA" runat="server"></asp:TextBox>
     <br />
 
     ID:

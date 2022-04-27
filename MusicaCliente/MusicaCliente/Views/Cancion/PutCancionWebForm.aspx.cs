@@ -23,6 +23,8 @@ namespace MusicaCliente.Views.Cancion
         {
             CANCION cancionActualizada = new CANCION();
 
+            string temp = txtIdA.Text;
+
             cancionActualizada.CAN_ID = txtId.Text;
             cancionActualizada.ALB_ID = txtAlbumId.Text;
             cancionActualizada.GEN_ID = txtGeneroId.Text;
