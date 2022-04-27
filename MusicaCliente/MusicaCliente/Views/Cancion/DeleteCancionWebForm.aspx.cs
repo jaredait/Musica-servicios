@@ -15,6 +15,7 @@ namespace MusicaCliente.Views.Cancion
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
+            txtIdEliminar.Focus();
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)

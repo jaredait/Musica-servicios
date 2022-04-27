@@ -33,6 +33,15 @@ namespace MusicaCliente.Views.Cancion
         protected global::System.Web.UI.WebControls.Button btnBuscarCancion;
 
         /// <summary>
+        /// btnLimpiarGet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnLimpiarGet;
+
+        /// <summary>
         /// GVBuscarCancion control.
         /// </summary>
         /// <remarks>

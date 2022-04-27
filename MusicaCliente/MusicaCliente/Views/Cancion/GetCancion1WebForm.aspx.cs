@@ -48,5 +48,11 @@ namespace MusicaCliente.Views.Cancion
             GVBuscarCancion.DataSource = listaTemp;
             GVBuscarCancion.DataBind();
         }
+
+        protected void btnLimpiarGet_Click(object sender, EventArgs e)
+        {
+            txtBuscarCancion.Text = "";
+            txtBuscarCancion.Focus();
+        }
     }
 }
