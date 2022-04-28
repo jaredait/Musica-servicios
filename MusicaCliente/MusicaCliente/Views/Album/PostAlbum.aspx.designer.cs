@@ -24,13 +24,22 @@ namespace MusicaCliente.Views.Album
         protected global::System.Web.UI.WebControls.TextBox txtId;
 
         /// <summary>
-        /// txtArtistaId control.
+        /// dropPostArtista control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtArtistaId;
+        protected global::System.Web.UI.WebControls.DropDownList dropPostArtista;
+
+        /// <summary>
+        /// ArtistaDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource ArtistaDataSource;
 
         /// <summary>
         /// txtNombre control.

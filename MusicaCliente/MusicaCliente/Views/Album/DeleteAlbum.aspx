@@ -7,7 +7,6 @@
         <h1>Eliminar Álbum</h1>
         <asp:GridView ID="GridView1" runat="server" class="table w-75">
         </asp:GridView>
-        <br />
         ID:<asp:TextBox ID="txtId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
         <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" class="btn btn-primary"/>

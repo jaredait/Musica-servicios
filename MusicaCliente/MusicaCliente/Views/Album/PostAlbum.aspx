@@ -8,7 +8,10 @@
         <br />
         ID:<asp:TextBox ID="txtId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Artista ID:<asp:TextBox ID="txtArtistaId" runat="server" class="form-control w-25"></asp:TextBox>
+        Artista:<br />
+        <asp:DropDownList ID="dropPostArtista" runat="server" DataSourceID="ArtistaDataSource" DataTextField="ART_NOMBRE" DataValueField="ART_ID">
+        </asp:DropDownList>
+        <asp:ObjectDataSource ID="ArtistaDataSource" runat="server" SelectMethod="cargarArtista" TypeName="MusicaCliente.Utilidades.Artista.Artista_Datos"></asp:ObjectDataSource>
         <br />
         Nombre:<asp:TextBox ID="txtNombre" runat="server" class="form-control w-25"></asp:TextBox>
         <br />

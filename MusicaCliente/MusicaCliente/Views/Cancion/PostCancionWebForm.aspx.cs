@@ -21,8 +21,6 @@ namespace MusicaCliente.Views.Cancion
         private void limpiarCampos()
         {
             TextBox1.Text = "";
-            TextBox2.Text = "";
-            TextBox3.Text = "";
             TextBox4.Text = "";
             TextBox5.Text = "";
             TextBox1.Focus();
@@ -37,8 +35,8 @@ namespace MusicaCliente.Views.Cancion
             // esto sucedió varias veces, incluso con nuevos textbox.
 
             cancionTemp.CAN_ID = TextBox1.Text;
-            cancionTemp.ALB_ID = TextBox2.Text;
-            cancionTemp.GEN_ID = TextBox3.Text;
+            cancionTemp.ALB_ID = dropPostAlbum.SelectedValue;
+            cancionTemp.GEN_ID = dropPostGenero.SelectedValue;
             cancionTemp.CAN_NOMBRE = TextBox4.Text;
             cancionTemp.CAN_DURACION = Convert.ToDecimal(TextBox5.Text);
 

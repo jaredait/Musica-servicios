@@ -27,8 +27,8 @@ namespace MusicaCliente.Views.Cancion
             operaciones = new Cancion_Datos();
 
             cancionActualizada.CAN_ID = txtIdActualizar.Text;
-            cancionActualizada.ALB_ID = txtAlbumIdActualizar.Text;
-            cancionActualizada.GEN_ID = txtGeneroIdActualizar.Text;
+            cancionActualizada.ALB_ID = dropAlbumPut.SelectedValue;
+            cancionActualizada.GEN_ID = dropGeneroPut.SelectedValue;
             cancionActualizada.CAN_NOMBRE = txtNombreActualizar.Text;
             cancionActualizada.CAN_DURACION = Convert.ToDecimal(txtDuracionActualizar.Text);
 
@@ -41,8 +41,6 @@ namespace MusicaCliente.Views.Cancion
         private void limpiarCampos()
         {
             txtIdActualizar.Text = "";
-            txtAlbumIdActualizar.Text = "";
-            txtGeneroIdActualizar.Text = "";
             txtNombreActualizar.Text = "";
             txtDuracionActualizar.Text = "";
             txtIdActualizar.Focus();

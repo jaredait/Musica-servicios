@@ -26,7 +26,7 @@ namespace MusicaCliente.Views.Album
 
             ALBUM nuevoAlbum = new ALBUM();
             nuevoAlbum.ALB_ID = txtId.Text;
-            nuevoAlbum.ART_ID = txtArtistaId.Text;
+            nuevoAlbum.ART_ID = dropPutArtista.SelectedValue;
             nuevoAlbum.ALB_NOMBRE = txtNombre.Text;
             nuevoAlbum.ALB_FECHA_LANZAMIENTO = calFecha.SelectedDate;
 
@@ -49,7 +49,6 @@ namespace MusicaCliente.Views.Album
         private void limpiarCampos()
         {
             txtId.Text = "";
-            txtArtistaId.Text = "";
             txtNombre.Text = "";
         }
     }

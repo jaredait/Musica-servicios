@@ -12,10 +12,18 @@
     <asp:TextBox ID="txtIdActualizar" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
         Álbum ID:
-    <asp:TextBox ID="txtAlbumIdActualizar" runat="server" class="form-control w-25"></asp:TextBox>
+        <br />
+        <asp:DropDownList ID="dropAlbumPut" runat="server" DataSourceID="PutCancionAlbumDataSorce" DataTextField="ALB_NOMBRE" DataValueField="ALB_ID">
+        </asp:DropDownList>
+        <asp:ObjectDataSource ID="PutCancionAlbumDataSorce" runat="server" SelectMethod="cargarAlbumes" TypeName="MusicaCliente.Utilidades.Album_Datos"></asp:ObjectDataSource>
+        <br />
         <br />
         Género ID:
-    <asp:TextBox ID="txtGeneroIdActualizar" runat="server" class="form-control w-25"></asp:TextBox>
+        <br />
+        <asp:DropDownList ID="dropGeneroPut" runat="server" DataSourceID="PutCancionGeneroDataSource" DataTextField="GEN_NOMBRE" DataValueField="GEN_ID">
+        </asp:DropDownList>
+        <asp:ObjectDataSource ID="PutCancionGeneroDataSource" runat="server" SelectMethod="cargarGenero" TypeName="MusicaCliente.Utilidades.Genero.Genero_Datos"></asp:ObjectDataSource>
+        <br />
         <br />
         Nombre:
     <asp:TextBox ID="txtNombreActualizar" runat="server" class="form-control w-25"></asp:TextBox>

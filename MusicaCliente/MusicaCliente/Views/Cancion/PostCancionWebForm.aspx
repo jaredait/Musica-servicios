@@ -9,11 +9,18 @@
         ID:
     <asp:TextBox ID="TextBox1" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        Álbum ID:
-    <asp:TextBox ID="TextBox2" runat="server" class="form-control w-25"></asp:TextBox>
+        Álbum:<br />
+        <asp:DropDownList ID="dropPostAlbum" runat="server" DataSourceID="PostCancionAlbumDataSource" DataTextField="ALB_NOMBRE" DataValueField="ALB_ID">
+        </asp:DropDownList>
+        <asp:ObjectDataSource ID="PostCancionAlbumDataSource" runat="server" SelectMethod="cargarAlbumes" TypeName="MusicaCliente.Utilidades.Album_Datos"></asp:ObjectDataSource>
+        <br />
         <br />
         Género ID:
-    <asp:TextBox ID="TextBox3" runat="server" class="form-control w-25"></asp:TextBox>
+        <br />
+        <asp:DropDownList ID="dropPostGenero" runat="server" DataSourceID="PostCancionGeneroDataSource" DataTextField="GEN_NOMBRE" DataValueField="GEN_ID">
+        </asp:DropDownList>
+        <asp:ObjectDataSource ID="PostCancionGeneroDataSource" runat="server" SelectMethod="cargarGenero" TypeName="MusicaCliente.Utilidades.Genero.Genero_Datos"></asp:ObjectDataSource>
+        <br />
         <br />
         Nombre:
     <asp:TextBox ID="TextBox4" runat="server" class="form-control w-25"></asp:TextBox>

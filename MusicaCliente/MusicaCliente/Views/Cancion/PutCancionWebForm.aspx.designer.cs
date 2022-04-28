@@ -33,22 +33,40 @@ namespace MusicaCliente.Views.Cancion
         protected global::System.Web.UI.WebControls.TextBox txtIdActualizar;
 
         /// <summary>
-        /// txtAlbumIdActualizar control.
+        /// dropAlbumPut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAlbumIdActualizar;
+        protected global::System.Web.UI.WebControls.DropDownList dropAlbumPut;
 
         /// <summary>
-        /// txtGeneroIdActualizar control.
+        /// PutCancionAlbumDataSorce control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGeneroIdActualizar;
+        protected global::System.Web.UI.WebControls.ObjectDataSource PutCancionAlbumDataSorce;
+
+        /// <summary>
+        /// dropGeneroPut control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dropGeneroPut;
+
+        /// <summary>
+        /// PutCancionGeneroDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource PutCancionGeneroDataSource;
 
         /// <summary>
         /// txtNombreActualizar control.
