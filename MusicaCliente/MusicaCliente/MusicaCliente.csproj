@@ -113,7 +113,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\ALBUM.cs" />
+    <Compile Include="Models\ALBUM_FULL.cs" />
     <Compile Include="Models\CANCION.cs" />
+    <Compile Include="Models\CANCION_FULL.cs" />
     <Compile Include="Models\GENERO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilidades\Album\Album_Datos.cs" />
@@ -121,6 +123,8 @@
     <Compile Include="Utilidades\Artista\Artista_Datos.cs" />
     <Compile Include="Utilidades\Cancion\Cancion_Datos.cs" />
     <Compile Include="Utilidades\Genero\Genero_Datos.cs" />
+    <Compile Include="ViewModels\AlbumArtistaViewModel.cs" />
+    <Compile Include="ViewModels\CancionAlbumGeneroViewModel.cs" />
     <Compile Include="Views\Album\DeleteAlbum.aspx.cs">
       <DependentUpon>DeleteAlbum.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

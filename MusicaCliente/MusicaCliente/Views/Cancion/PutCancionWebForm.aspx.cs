@@ -1,5 +1,6 @@
 ﻿using Musica;
 using MusicaCliente.Utilidades.Cancion;
+using MusicaCliente.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace MusicaCliente.Views.Cancion
     public partial class PutCancionWebForm : System.Web.UI.Page
     {
         Cancion_Datos operaciones;
+        private CancionAlbumGeneroViewModel cancionAG;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,6 +24,7 @@ namespace MusicaCliente.Views.Cancion
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             CANCION cancionActualizada = new CANCION();
+            operaciones = new Cancion_Datos();
 
             cancionActualizada.CAN_ID = txtIdActualizar.Text;
             cancionActualizada.ALB_ID = txtAlbumIdActualizar.Text;
@@ -47,8 +50,10 @@ namespace MusicaCliente.Views.Cancion
 
         private void cargarGridView()
         {
-            operaciones = new Cancion_Datos();
-            GVPut.DataSource = operaciones.cargarCanciones();
+            //operaciones = new Cancion_Datos();
+            //GVPut.DataSource = operaciones.cargarCanciones();
+            cancionAG = new CancionAlbumGeneroViewModel();
+            GVPut.DataSource = cancionAG.CargarCancionAlbumGenero();
             GVPut.DataBind();
         }
     }

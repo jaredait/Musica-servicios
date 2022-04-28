@@ -1,5 +1,6 @@
 ﻿using MusicaCliente.Models;
 using MusicaCliente.Utilidades;
+using MusicaCliente.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace MusicaCliente.Views.Album
     public partial class GetAlbum : System.Web.UI.Page
     {
         Album_Datos operaciones;
+        AlbumArtistaViewModel albumArtista;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -37,16 +39,22 @@ namespace MusicaCliente.Views.Album
 
         private void cargarGridView()
         {
-            operaciones = new Album_Datos();
-            GVGet.DataSource = operaciones.cargarAlbumes();
+            //operaciones = new Album_Datos();
+            //GVGet.DataSource = operaciones.cargarAlbumes();
+            albumArtista = new AlbumArtistaViewModel();
+            GVGet.DataSource = albumArtista.getAlbum_Artistas();
             GVGet.DataBind();
         }
 
         private void cargarGridView(string id)
         {
-            operaciones = new Album_Datos();
-            List<ALBUM> datos = new List<ALBUM>();
-            datos.Add(operaciones.cargarAlbumPorId(id));
+            //operaciones = new Album_Datos();
+            //List<ALBUM> datos = new List<ALBUM>();
+            //datos.Add(operaciones.cargarAlbumPorId(id));
+            List<ALBUM_FULL> datos = new List<ALBUM_FULL>()
+            {
+                albumArtista.cargarAlbumArtistaPorId(id)
+            };
             GVGet.DataSource = datos;
             GVGet.DataBind();
         }

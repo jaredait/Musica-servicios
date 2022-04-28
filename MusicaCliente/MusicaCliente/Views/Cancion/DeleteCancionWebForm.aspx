@@ -8,6 +8,6 @@
         <asp:GridView ID="GVGet" runat="server" class="table w-75"></asp:GridView>
         <br />
         ID:<asp:TextBox ID="txtIdEliminar" runat="server" CssClass="form-control w-25"></asp:TextBox>
-        <asp:Button ID="btnEliminar" runat="server" Text="Button" OnClick="btnEliminar_Click" class="btn btn-primary"/>
+        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" class="btn btn-danger"/>
     </div>
 </asp:Content>

@@ -1,4 +1,5 @@
 ﻿using MusicaCliente.Utilidades;
+using MusicaCliente.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,7 @@ namespace MusicaCliente.Views.Album
     public partial class DeleteAlbum : System.Web.UI.Page
     {
         Album_Datos operaciones;
+        AlbumArtistaViewModel albumArtista;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,8 +30,10 @@ namespace MusicaCliente.Views.Album
 
         private void cargarGridView()
         {
-            operaciones = new Album_Datos();
-            GridView1.DataSource = operaciones.cargarAlbumes();
+            //operaciones = new Album_Datos();
+            //GridView1.DataSource = operaciones.cargarAlbumes();
+            albumArtista = new AlbumArtistaViewModel();
+            GridView1.DataSource = albumArtista.getAlbum_Artistas();
             GridView1.DataBind();
         }
 
