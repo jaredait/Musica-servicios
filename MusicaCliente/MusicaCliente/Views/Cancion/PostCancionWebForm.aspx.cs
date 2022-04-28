@@ -43,5 +43,11 @@ namespace MusicaCliente.Views.Cancion
             operaciones.crearCancion(cancionTemp);
             limpiarCampos();
         }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            TextBox1.Focus();
+        }
     }
 }

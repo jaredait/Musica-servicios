@@ -38,5 +38,11 @@ namespace MusicaCliente.Views.Artista
 
             txtCantIntegrantes.Text = "";
         }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            txtId.Focus();
+        }
     }
 }

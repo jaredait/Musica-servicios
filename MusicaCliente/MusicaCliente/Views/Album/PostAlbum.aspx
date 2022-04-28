@@ -9,7 +9,7 @@
         ID:<asp:TextBox ID="txtId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
         Artista:<br />
-        <asp:DropDownList ID="dropPostArtista" runat="server" CssClass="form-control w-25" DataSourceID="ArtistaDataSource" DataTextField="ART_NOMBRE" DataValueField="ART_ID">
+        <asp:DropDownList ID="dropPostArtista" runat="server" CssClass="form-control w-25" DataSourceID="ArtistaDataSource" DataTextField="ART_NOMBRE" DataValueField="ART_ID" >
         </asp:DropDownList>
         <asp:ObjectDataSource ID="ArtistaDataSource" runat="server" SelectMethod="cargarArtista" TypeName="MusicaCliente.Utilidades.Artista.Artista_Datos"></asp:ObjectDataSource>
         <br />

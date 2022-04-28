@@ -51,5 +51,13 @@ namespace MusicaCliente.Views.Album
             txtId.Text = "";
             txtNombre.Text = "";
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtNombre.Text = "";
+            txtId.Focus();
+            txtNombre.Focus();
+        }
     }
 }

@@ -11,7 +11,7 @@
         ID:<asp:TextBox ID="txtId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
         Artista:<br />
-        <asp:DropDownList ID="dropPutArtista" runat="server" DataSourceID="PutAlbumArtistaDataSource" DataTextField="ART_NOMBRE" DataValueField="ART_ID">
+        <asp:DropDownList ID="dropPutArtista" runat="server" DataSourceID="PutAlbumArtistaDataSource" DataTextField="ART_NOMBRE" DataValueField="ART_ID" CssClass="form-control w-25">
         </asp:DropDownList>
         <asp:ObjectDataSource ID="PutAlbumArtistaDataSource" runat="server" SelectMethod="cargarArtista" TypeName="MusicaCliente.Utilidades.Artista.Artista_Datos"></asp:ObjectDataSource>
         <br />
@@ -20,6 +20,7 @@
         Fecha:<asp:Calendar ID="calFecha" runat="server"></asp:Calendar>
         <br />
         <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" OnClick="btnActualizar_Click" class="btn btn-primary"/>
+        <asp:Button ID="btnLimpiar" runat="server" OnClick="Button1_Click" Text="Button" CssClass="btn btn-secondary"/>
         <br />
     </div>
 </asp:Content>

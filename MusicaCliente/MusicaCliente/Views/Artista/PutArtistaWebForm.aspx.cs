@@ -47,5 +47,11 @@ namespace MusicaCliente.Views.Artista
             txtEmailArt.Text = "";
             txtIntegrantesArt.Text = "";
         }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            txtIdArtista.Focus();
+        }
     }
 }

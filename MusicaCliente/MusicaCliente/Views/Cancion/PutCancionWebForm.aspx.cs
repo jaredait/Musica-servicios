@@ -54,5 +54,11 @@ namespace MusicaCliente.Views.Cancion
             GVPut.DataSource = cancionAG.CargarCancionAlbumGenero();
             GVPut.DataBind();
         }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            txtIdActualizar.Focus();
+        }
     }
 }

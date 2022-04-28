@@ -37,5 +37,11 @@ namespace MusicaCliente.Views.Genero
             txtIDGenero.Text = "";
             txtIDNombreGenero.Text = "";
         }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            txtIDGenero.Focus();
+        }
     }
 }

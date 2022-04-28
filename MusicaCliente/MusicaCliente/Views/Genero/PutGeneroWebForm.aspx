@@ -15,5 +15,6 @@
         <br /><asp:TextBox ID="txtNombreGenero" runat="server" CssClass="form-control w-25"></asp:TextBox>
         <br />
         <asp:Button ID="btnActualizarGenero" runat="server" OnClick="btnActualizarGenero_Click" Text="Actualizar" class="btn btn-primary"/>
+        <asp:Button ID="btnLimpiar" runat="server" OnClick="btnLimpiar_Click1" Text="Limpiar" CssClass="btn btn-secondary" />
     </div>
 </asp:Content>
