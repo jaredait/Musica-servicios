@@ -11,6 +11,9 @@
         <br />
         <asp:Button ID="btnEliminarGenero" runat="server" OnClick="btnEliminarGenero_Click" Text="Eliminar" class="btn btn-danger"/>
         <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click"/>
+        <br />
+        <br />
+
 
     </div>
 </asp:Content>

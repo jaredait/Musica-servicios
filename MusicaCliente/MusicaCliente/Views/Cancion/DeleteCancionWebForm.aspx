@@ -10,5 +10,8 @@
         <br />
         <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" class="btn btn-danger"/>
         <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click"/>    
+        <br />
+        <br />
+
     </div>
 </asp:Content>

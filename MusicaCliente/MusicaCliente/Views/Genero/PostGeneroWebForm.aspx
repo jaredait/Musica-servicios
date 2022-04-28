@@ -12,6 +12,9 @@
         <asp:Button ID="btnCrearGenero" runat="server" OnClick="btnCrearGenero_Click" Text="Crear" class="btn btn-success"/>
 
         <asp:Button ID="btnLimpiar" runat="server" OnClick="btnLimpiar_Click" Text="Limpiar" CssClass="btn btn-secondary" />
+        <br />
+        <br />
+
 
     </div>
 </asp:Content>

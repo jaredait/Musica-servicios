@@ -14,13 +14,11 @@
         </asp:DropDownList>
         <asp:ObjectDataSource ID="PostCancionAlbumDataSource" runat="server" SelectMethod="cargarAlbumes" TypeName="MusicaCliente.Utilidades.Album_Datos"></asp:ObjectDataSource>
         <br />
-        <br />
-        Género ID:
+        Género:
         <br />
         <asp:DropDownList ID="dropPostGenero" runat="server" DataSourceID="PostCancionGeneroDataSource" DataTextField="GEN_NOMBRE" DataValueField="GEN_ID" CssClass="form-control w-25">
         </asp:DropDownList>
         <asp:ObjectDataSource ID="PostCancionGeneroDataSource" runat="server" SelectMethod="cargarGenero" TypeName="MusicaCliente.Utilidades.Genero.Genero_Datos" ></asp:ObjectDataSource>
-        <br />
         <br />
         Nombre:
     <asp:TextBox ID="TextBox4" runat="server" class="form-control w-25"></asp:TextBox>
@@ -30,6 +28,9 @@
         <br />
         <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" class="btn btn-success"/>
         <asp:Button ID="btnLimpiar" runat="server" OnClick="btnLimpiar_Click" Text="Limpiar" CssClass="btn btn-secondary" />
+        <br />
+        <br />
+
     </div>
 
 </asp:Content>

@@ -22,5 +22,6 @@
         <asp:Button ID="btnActualizar" runat="server" Text="Actualizar" OnClick="btnActualizar_Click" class="btn btn-primary"/>
         <asp:Button ID="btnLimpiar" runat="server" OnClick="Button1_Click" Text="Button" CssClass="btn btn-secondary"/>
         <br />
+        <br />
     </div>
 </asp:Content>

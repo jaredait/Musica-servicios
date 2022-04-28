@@ -10,7 +10,10 @@
         ID:<asp:TextBox ID="txtID" runat="server" CssClass="form-control w-25"></asp:TextBox>
         <br />
         <asp:Button ID="btnEliminar" runat="server" OnClick="btnEliminar_Click" Text="Eliminar" class="btn btn-danger"/>
-        <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click"/>    
+        <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click"/>   
+        <br />
+        <br />
+ 
     </div>
 
 </asp:Content>

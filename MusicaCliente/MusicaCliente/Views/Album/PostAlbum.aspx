@@ -20,6 +20,9 @@
         <br />
         <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" class="btn btn-success" />
         <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click" />
+        <br />
+        <br />
+
 
     </div>
 </asp:Content>
