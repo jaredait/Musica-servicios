@@ -15,7 +15,7 @@ namespace MusicaCliente.Views.Album
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            txtId.Focus();
         }
 
         protected void TextBox2_TextChanged(object sender, EventArgs e)
@@ -41,6 +41,12 @@ namespace MusicaCliente.Views.Album
         {
             txtId.Text = "";
             txtNombre.Text = "";
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+            txtId.Focus();
         }
     }
 }

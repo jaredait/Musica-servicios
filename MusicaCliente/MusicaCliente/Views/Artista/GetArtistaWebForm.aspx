@@ -11,5 +11,6 @@
         ID:<asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control w-25"></asp:TextBox>
         <br />
         <asp:Button ID="btnBuscar" runat="server" OnClick="btnBuscar_Click" CssClass="btn btn-primary" Text="Buscar" />
+        <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click" />
     </div>
 </asp:Content>

@@ -54,8 +54,8 @@ namespace MusicaCliente.ViewModels
             CANCION temp = cancionDatos.cargarCancionPorId(id);
 
             cancionFull.CAN_ID = id;
-            cancionFull.ALB_NOMBRE = albumDatos.cargarAlbumPorId(id).ALB_NOMBRE;
-            cancionFull.GEN_NOMBRE = generoDatos.cargarGeneroPorId(id).GEN_NOMBRE;
+            cancionFull.ALB_NOMBRE = albumDatos.cargarAlbumPorId(temp.ALB_ID).ALB_NOMBRE;
+            cancionFull.GEN_NOMBRE = generoDatos.cargarGeneroPorId(temp.GEN_ID).GEN_NOMBRE;
             cancionFull.CAN_NOMBRE = temp.CAN_NOMBRE;
             cancionFull.CAN_DURACION = temp.CAN_DURACION;
 

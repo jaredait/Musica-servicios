@@ -14,6 +14,7 @@ namespace MusicaCliente.Views.Artista
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
+            txtBuscar.Focus();
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
@@ -42,6 +43,12 @@ namespace MusicaCliente.Views.Artista
             datos.Add(operaciones.cargarArtistaPorId(id));
             GridView1.DataSource = datos;
             GridView1.DataBind();
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBuscar.Text = "";
+            txtBuscar.Focus();
         }
     }
 }

@@ -46,7 +46,7 @@ namespace MusicaCliente.ViewModels
             ALBUM albumTemp = albumDatos.cargarAlbumPorId(id);
 
             albumArtista.ALB_ID = id;
-            albumArtista.ART_NOMBRE = artistaDatos.cargarArtistaPorId(albumTemp.ALB_ID).ART_NOMBRE;
+            albumArtista.ART_NOMBRE = artistaDatos.cargarArtistaPorId(albumTemp.ART_ID).ART_NOMBRE;
             albumArtista.ALB_NOMBRE = albumTemp.ALB_NOMBRE;
             albumArtista.ALB_FECHA_LANZAMIENTO = albumTemp.ALB_FECHA_LANZAMIENTO;
 

@@ -28,7 +28,7 @@
         Duración:
     <asp:TextBox ID="TextBox5" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
-        <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" class="btn btn-primary"/>
+        <asp:Button ID="btnCrear" runat="server" Text="Crear" OnClick="btnCrear_Click" class="btn btn-success"/>
     </div>
 
 </asp:Content>

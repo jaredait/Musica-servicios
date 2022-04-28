@@ -12,6 +12,7 @@
         <asp:TextBox ID="txtId" runat="server" class="form-control w-25"></asp:TextBox>
         <br />
         <asp:Button ID="btnBuscar" runat="server" OnClick="Button1_Click" Text="Buscar" class="btn btn-primary"/>
+        <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click"/>    
     </div>
 </asp:Content>
 

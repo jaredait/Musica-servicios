@@ -15,6 +15,7 @@ namespace MusicaCliente.Views.Genero
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
+            txtBuscarGenero.Focus();
         }
 
         protected void btnBuscarGenero_Click(object sender, EventArgs e)
@@ -49,6 +50,12 @@ namespace MusicaCliente.Views.Genero
         private void limpiarCampos()
         {
             txtBuscarGenero.Text = "";
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtBuscarGenero.Text = "";
+            txtBuscarGenero.Focus();
         }
     }
 }

@@ -17,6 +17,7 @@ namespace MusicaCliente.Views.Album
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
+            txtId.Focus();
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
@@ -42,6 +43,10 @@ namespace MusicaCliente.Views.Album
             txtId.Text = "";
         }
 
-
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtId.Focus();
+        }
     }
 }

@@ -15,6 +15,15 @@ namespace MusicaCliente.Views.Cancion
     {
 
         /// <summary>
+        /// GVBuscarCancion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GVBuscarCancion;
+
+        /// <summary>
         /// txtBuscarCancion control.
         /// </summary>
         /// <remarks>
@@ -40,14 +49,5 @@ namespace MusicaCliente.Views.Cancion
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnLimpiarGet;
-
-        /// <summary>
-        /// GVBuscarCancion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GVBuscarCancion;
     }
 }

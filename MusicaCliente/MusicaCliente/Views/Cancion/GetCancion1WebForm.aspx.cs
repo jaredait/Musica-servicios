@@ -19,6 +19,7 @@ namespace MusicaCliente.Views.Cancion
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
+            txtBuscarCancion.Focus();
         }
 
         protected void btnBuscarCancion_Click(object sender, EventArgs e)

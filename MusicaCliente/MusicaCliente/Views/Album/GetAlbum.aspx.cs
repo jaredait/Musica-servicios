@@ -18,6 +18,7 @@ namespace MusicaCliente.Views.Album
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
+            txtId.Focus();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -57,6 +58,12 @@ namespace MusicaCliente.Views.Album
             };
             GVGet.DataSource = datos;
             GVGet.DataBind();
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtId.Text = "";
+            txtId.Focus();
         }
     }
 }

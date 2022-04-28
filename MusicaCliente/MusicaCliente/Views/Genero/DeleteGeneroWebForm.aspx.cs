@@ -14,6 +14,7 @@ namespace MusicaCliente.Views.Genero
         protected void Page_Load(object sender, EventArgs e)
         {
             cargarGridView();
+            txtEliminarGenero.Focus();
         }
 
         protected void TextBox1_TextChanged(object sender, EventArgs e)
@@ -41,6 +42,12 @@ namespace MusicaCliente.Views.Genero
 
             cargarGridView();
             limpiarCampos();
+        }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtEliminarGenero.Text = "";
+            txtEliminarGenero.Focus();
         }
     }
 }

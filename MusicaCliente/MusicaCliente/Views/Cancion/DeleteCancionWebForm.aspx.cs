@@ -44,5 +44,11 @@ namespace MusicaCliente.Views.Cancion
             txtIdEliminar.Text = "";
             txtIdEliminar.Focus();
         }
+
+        protected void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtIdEliminar.Text = "";
+            txtIdEliminar.Focus();
+        }
     }
 }

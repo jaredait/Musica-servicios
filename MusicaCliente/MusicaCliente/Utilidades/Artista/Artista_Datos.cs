@@ -34,7 +34,8 @@ namespace MusicaCliente.Utilidades.Artista
         // GET por id
         public ARTISTA cargarArtistaPorId(string id)
         {
-            recibir = webClient.DownloadString(new Uri(uri + "/" + id));
+            string uri = $"{this.uri}/{id}";
+            recibir = webClient.DownloadString(new Uri(uri));
             ARTISTA cancionTemp = JsonConvert.DeserializeObject<ARTISTA>(recibir);
             return cancionTemp;
         }
@@ -69,6 +70,7 @@ namespace MusicaCliente.Utilidades.Artista
             string uri = this.uri + "/" + id;
             verbo = "DELETE";
 
+            webClient = new WebClient();
             webClient.Headers.Add("content-type", "application/json");
             webClient.UploadString(uri, verbo, "");
         }

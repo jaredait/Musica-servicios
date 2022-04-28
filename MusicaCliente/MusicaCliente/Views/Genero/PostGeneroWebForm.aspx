@@ -6,7 +6,9 @@
     <div class="container">
         <h1>Crear Género</h1>
         ID:<asp:TextBox ID="txtIDGenero" runat="server" class="form-control w-25"></asp:TextBox>
+        <br />
         Nombre:<asp:TextBox ID="txtIDNombreGenero" runat="server" CssClass="form-control w-25"></asp:TextBox>
+        <br />
         <asp:Button ID="btnCrearGenero" runat="server" OnClick="btnCrearGenero_Click" Text="Crear" class="btn btn-success"/>
 
     </div>

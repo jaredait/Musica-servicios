@@ -8,7 +8,9 @@
         <asp:GridView ID="GridView1" runat="server" CssClass="table w-75">
         </asp:GridView>
         ID:<asp:TextBox ID="txtEliminarGenero" runat="server" OnTextChanged="TextBox1_TextChanged" CssClass="form-control w-25"></asp:TextBox>
+        <br />
         <asp:Button ID="btnEliminarGenero" runat="server" OnClick="btnEliminarGenero_Click" Text="Eliminar" class="btn btn-danger"/>
+        <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" class="btn btn-secondary" OnClick="btnLimpiar_Click"/>
 
     </div>
 </asp:Content>
